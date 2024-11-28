@@ -1,0 +1,51 @@
+import 'package:ethiopian_datetime/ethiopian_datetime.dart';
+
+void main() {
+  
+      DateTime now = DateTime.now();
+      print(now);
+      print(now.convertToEthiopian());
+      ETDateTime etnow = ETDateTime.now();
+      print(etnow);
+      print(etnow.convertToGregorian());
+      final etlater = etnow.add(Duration(days: 2));
+      etnow.toString();
+      etnow.toIso8601String();
+      etnow.isAfter(etlater);
+      etnow.isBefore(etlater);
+      etnow.isAtSameMomentAs(etlater);
+      etnow.compareTo(etlater);
+        print(ETDateFormat("dd-MMMM-yyyy HH:mm:ss GG").format(now));
+        print(ETDateFormat.EEEE().format(now));
+        print(ETDateFormat.LLL().format(now));
+        print(ETDateFormat.LLLL().format(now));
+        print(ETDateFormat.M().format(now));
+        print(ETDateFormat.Md().format(now));
+        print(ETDateFormat.MEd().format(now));
+        print(ETDateFormat.MMM().format(now));
+        print(ETDateFormat.MMMd().format(now));
+        print(ETDateFormat.MMMEd().format(now));
+        print(ETDateFormat.MMMM().format(now));
+        print(ETDateFormat.MMMMd().format(now));
+        print(ETDateFormat.MMMMEEEEd().format(now));
+        print(ETDateFormat.QQQ().format(now));
+        print(ETDateFormat.QQQQ().format(now));
+        print(ETDateFormat.y().format(now));
+        print(ETDateFormat.yM().format(now));
+        print(ETDateFormat.yMd().format(now));
+        print(ETDateFormat.yMEd().format(now));
+        print(ETDateFormat.yMMM().format(now));
+        print(ETDateFormat.yMMMd().format(now));
+        print(ETDateFormat.yMMMEd().format(now));
+        print(ETDateFormat.yMMMM().format(now));
+        print(ETDateFormat.yMMMMd().format(now));
+        print(ETDateFormat.yMMMMEEEEd().format(now));
+        print(ETDateFormat.yQQQ().format(now));
+        print(ETDateFormat.yQQQQ().format(now));
+        print(ETDateFormat.H().format(now));
+        print(ETDateFormat.Hm().format(now));
+        print(ETDateFormat.Hms().format(now));
+        print(ETDateFormat.j().format(now));
+        print(ETDateFormat.jm().format(now));
+        print(ETDateFormat.jms().format(now));
+}
