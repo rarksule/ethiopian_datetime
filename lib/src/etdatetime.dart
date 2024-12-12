@@ -174,7 +174,7 @@ class ETDateTime extends DateTime {
     return ETDateTimeConverter.toEthiopian(DateTime.now(),
         timeDependent: timeDependent);
   }
-
+  @Deprecated('use ETDateUtils methods')
   static List<String> listOfETDateSymbol(String? locale, String key) {
     return ethiopianDateSymbols[locale]![key]!;
   }

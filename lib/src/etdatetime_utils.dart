@@ -1,6 +1,7 @@
 import 'etdatetime.dart';
 import 'ethiopian_datetime_symbols.dart';
-
+///utiility class for ethiopian datetime and retrieving 
+///date related Strings
 final class ETDateUtils {
   /// Returns a [ETDateTime] with the date of the original, but time set to
   /// morning 12:00.
@@ -83,8 +84,12 @@ final class ETDateUtils {
   /// ```
   /// if locale is not given defaults to 'am'
   /// Returns a list of month names in the specified locale.
-  static List<String> getMonthNames([locale]) =>
-      ethiopianDateSymbols[locale ?? "am"]!["MONTHS"]!;
+  static List<String> getMonthNames([locale]) {
+    if (ethiopianDateSymbols[locale ?? "am"] == null) {
+      return ethiopianDateSymbols["am"]!["MONTHS"]!;
+    }
+    return ethiopianDateSymbols[locale ?? "am"]!["MONTHS"]!;
+  }
 
   /// Returns a list of shortMonth names based on the Ethiopian calendar.
   ///
@@ -94,8 +99,12 @@ final class ETDateUtils {
   /// ```
   /// if locale is not given defaults to 'am'
   /// Returns a list of shortMonth names in the specified locale.
-  static List<String> getShortMonthNames([locale]) =>
-      ethiopianDateSymbols[locale ?? "am"]!["SHORTMONTHS"]!;
+  static List<String> getShortMonthNames([locale]) {
+    if (ethiopianDateSymbols[locale ?? "am"] == null) {
+      return ethiopianDateSymbols["am"]!["SHORTMONTHS"]!;
+    }
+    return ethiopianDateSymbols[locale ?? "am"]!["SHORTMONTHS"]!;
+  }
 
   /// Returns a list of narrowMonth names based on the Ethiopian calendar.
   ///
@@ -105,8 +114,12 @@ final class ETDateUtils {
   /// ```
   /// if locale is not given defaults to 'am'
   /// Returns a list of narrowMonth names in the specified locale.
-  static List<String> getNarrowMonthNames([locale]) =>
-      ethiopianDateSymbols[locale ?? "am"]!["NARROWMONTHS"]!;
+  static List<String> getNarrowMonthNames([locale]) {
+    if (ethiopianDateSymbols[locale ?? "am"] == null) {
+      return ethiopianDateSymbols["am"]!["NARROWMONTHS"]!;
+    }
+    return ethiopianDateSymbols[locale ?? "am"]!["NARROWMONTHS"]!;
+  }
 
   /// Returns a list of Weekday names based on the Ethiopian calendar.
   ///
@@ -116,8 +129,12 @@ final class ETDateUtils {
   /// ```
   /// if locale is not given defaults to 'am'
   /// Returns a list of Weekday names in the specified locale.
-  static List<String> getWeekDayNames([locale]) =>
-      ethiopianDateSymbols[locale ?? "am"]!["WEEKDAYS"]!;
+  static List<String> getWeekDayNames([locale]) {
+    if (ethiopianDateSymbols[locale ?? "am"] == null) {
+      return ethiopianDateSymbols["am"]!["WEEKDAYS"]!;
+    }
+    return ethiopianDateSymbols[locale ?? "am"]!["WEEKDAYS"]!;
+  }
 
   /// Returns a list of shortWeekday names based on the Ethiopian calendar.
   ///
@@ -127,8 +144,12 @@ final class ETDateUtils {
   /// ```
   /// if locale is not given defaults to 'am'
   /// Returns a list of shortWeekday names in the specified locale.
-  static List<String> getShortWeekDayNames([locale]) =>
-      ethiopianDateSymbols[locale ?? "am"]!["SHORTWEEKDAYS"]!;
+  static List<String> getShortWeekDayNames([locale]) {
+    if (ethiopianDateSymbols[locale ?? "am"] == null) {
+      return ethiopianDateSymbols["am"]!["SHORTWEEKDAYS"]!;
+    }
+    return ethiopianDateSymbols[locale ?? "am"]!["SHORTWEEKDAYS"]!;
+  }
 
   /// Returns a list of narrowWeekDay names based on the Ethiopian calendar.
   ///
@@ -138,19 +159,25 @@ final class ETDateUtils {
   /// ```
   /// if locale is not given defaults to 'am'
   /// Returns a list of narrowWeekDay names in the specified locale.
-  static List<String> getNarrowWeekDayNames([locale]) =>
-      ethiopianDateSymbols[locale ?? "am"]!["NARROWWEEKDAYS"]!;
+  static List<String> getNarrowWeekDayNames([locale]) {
+    if (ethiopianDateSymbols[locale ?? "am"] == null) {
+      return ethiopianDateSymbols["am"]!["NARROWWEEKDAYS"]!;
+    }
+    return ethiopianDateSymbols[locale ?? "am"]!["NARROWWEEKDAYS"]!;
+  }
 
   /// Returns a list of timeofDay names based on the Ethiopian calendar.
   ///
   /// Example:
   /// ```dart
-  /// List<String> timeofDays = ETDateUtils.getTimeOfDayNames('am'); //['ቀን','ማታ','ለሊት','ጠዋት']
+  /// List<String> timeofDays = ETDateUtils.getTimeOfDayNames('am'); //['ቀን','ማታ','ጠዋት','ለሊት']
   /// ```
   /// if locale is not given defaults to 'am'
   /// Returns a list of timeofDays names in the specified locale.
   static List<String> getTimeOfDayNames([locale]) {
-    final value = ethiopianDateSymbols[locale ?? "am"]!;
+    final value =
+        ethiopianDateSymbols[locale ?? "am"] ?? ethiopianDateSymbols["am"]!;
+
     final result = [
       value['QEN']![0],
       value['MATA']![0],

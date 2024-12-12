@@ -51,6 +51,14 @@ void main() {
     DateTime gregorianNow = now.convertToGregorian();
     print(gregorianNow);
 
+    //formate datetime to String with desired locale and pattern
+    print(ETDateFormat("dd-MMMM-yyyy HH:mm:ss")
+      .format(now)); // 29-ሕዳር-2017 10:32:21
+    print(ETDateFormat.MMMMEEEEd('ti').format(now)); // ሰንበት, ሕዳር 29
+
+    //  Retrieve time of day names used in the Ethiopian calendar.
+    print(ETDateUtils.dayOnly(now)); // 2017-03-29 12:00:00.000000
+
 }
 
 ```

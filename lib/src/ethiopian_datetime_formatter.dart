@@ -4,6 +4,8 @@ import 'etdatetime.dart';
 import 'etdatetime_converter.dart';
 import 'ethiopian_datetime_symbols.dart';
 
+/// DateFormatting class for Ethiopian Datetime
+///  inspired by intl
 class ETDateFormat extends DateFormat {
   @override
   final String pattern;

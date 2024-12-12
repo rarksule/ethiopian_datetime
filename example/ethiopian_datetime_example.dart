@@ -36,7 +36,7 @@ void main() {
 
 //  Print the current Ethiopian date and time in various date formats.
   print(ETDateFormat("dd-MMMM-yyyy HH:mm:ss")
-      .format(now)); // 29-ሕዳር-2017 10:32:21 ዐ.ል
+      .format(now)); // 29-ሕዳር-2017 10:32:21
   print(ETDateFormat.MMMMEEEEd('ti').format(now)); // ሰንበት, ሕዳር 29
   print(ETDateFormat.jms('so').format(now)); // maalin 10:19:34
   print(ETDateFormat.yMMMEd('om').format(now)); // D, Sad 29, 2017
@@ -48,5 +48,5 @@ void main() {
   ETDateUtils.isSameDay(typecast, myDateTime);
 
 //  Retrieve time of day names used in the Ethiopian calendar.
-  print(ETDateUtils.getTimeOfDayNames()); // [ቀን, ማታ, ጠዋት, ለሊት]
+  print(ETDateUtils.getTimeOfDayNames()); // [ቀን, ማታ, ለሊት, ጠዋት]
 }
