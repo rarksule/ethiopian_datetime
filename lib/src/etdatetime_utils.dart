@@ -1,6 +1,7 @@
 import 'etdatetime.dart';
 import 'ethiopian_datetime_symbols.dart';
-///utiility class for ethiopian datetime and retrieving 
+
+///utiility class for ethiopian datetime and retrieving
 ///date related Strings
 final class ETDateUtils {
   /// Returns a [ETDateTime] with the date of the original, but time set to

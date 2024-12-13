@@ -1,7 +1,6 @@
 import 'package:ethiopian_datetime/ethiopian_datetime.dart';
 
 void main() {
-  
 //  Create an instance of ETDateTime with a specific Ethiopian date.
   final myDateTime = ETDateTime(2017, 3, 4);
 
