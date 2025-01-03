@@ -1,5 +1,5 @@
 ## ethiopian_datetime
-
+[![pub package](https://img.shields.io/pub/v/ethiopian_datetime.svg?color=%23e67e22&label=pub&logo=ethiopian_datetime)]
 A Dart /Flutter package for working with Ethiopian dates and times, providing conversion between Ethiopian and Gregorian calendars, date formatting, and utility functions.
 
 ## Features
