@@ -1,6 +1,6 @@
 name: ethiopian_datetime
 description: Dart / Flutter Package for Ethiopian Calendar and dateFormatting and more utilties.
-version: 1.0.4
+version: 1.0.5
 repository: https://github.com/rarksule/ethiopian_datetime.git
 
 environment:

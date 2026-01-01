@@ -30,107 +30,107 @@ class ETDateFormat extends DateFormat {
 
   /// Creates an Ethiopian date format object with the pattern 'd' and optional locale.
   /// format for day value number
-  ETDateFormat.d([locale]) : this('d', locale);
+  ETDateFormat.d([String? locale]) : this('d', locale);
 
   /// Creates an Ethiopian date format object with the pattern 'E' and optional locale.
   /// format for short weekday value String
-  ETDateFormat.E([locale]) : this('E', locale);
+  ETDateFormat.E([String? locale]) : this('E', locale);
 
   /// Creates an Ethiopian date format object with the pattern 'EEEE' and optional locale.
-  ETDateFormat.EEEE([locale]) : this('EEEE', locale);
+  ETDateFormat.EEEE([String? locale]) : this('EEEE', locale);
 
   /// Creates an Ethiopian date format object with the pattern 'LLL' and optional locale.
-  ETDateFormat.LLL([locale]) : this('LLL', locale);
+  ETDateFormat.LLL([String? locale]) : this('LLL', locale);
 
   /// Creates an Ethiopian date format object with the pattern 'LLLL' and optional locale.
-  ETDateFormat.LLLL([locale]) : this('LLLL', locale);
+  ETDateFormat.LLLL([String? locale]) : this('LLLL', locale);
 
   /// Creates an Ethiopian date format object with the pattern 'M' and optional locale.
-  ETDateFormat.M([locale]) : this('M', locale);
+  ETDateFormat.M([String? locale]) : this('M', locale);
 
   /// Creates an Ethiopian date format object with the pattern 'E' and optional locale.
-  ETDateFormat.Md([locale]) : this('Md', locale);
+  ETDateFormat.Md([String? locale]) : this('Md', locale);
 
   /// Creates an Ethiopian date format object with the pattern 'MEd' and optional locale.
-  ETDateFormat.MEd([locale]) : this('MEd', locale);
+  ETDateFormat.MEd([String? locale]) : this('MEd', locale);
 
   /// Creates an Ethiopian date format object with the pattern 'E' and optional locale.
-  ETDateFormat.MMM([locale]) : this('MMM', locale);
+  ETDateFormat.MMM([String? locale]) : this('MMM', locale);
 
   /// Creates an Ethiopian date format object with the pattern 'MMM' and optional locale.
-  ETDateFormat.MMMd([locale]) : this('MMMd', locale);
+  ETDateFormat.MMMd([String? locale]) : this('MMMd', locale);
 
   /// Creates an Ethiopian date format object with the pattern 'MMMEd' and optional locale.
-  ETDateFormat.MMMEd([locale]) : this('MMMEd', locale);
+  ETDateFormat.MMMEd([String? locale]) : this('MMMEd', locale);
 
   /// Creates an Ethiopian date format object with the pattern 'MMMM' and optional locale.
-  ETDateFormat.MMMM([locale]) : this('MMMM', locale);
+  ETDateFormat.MMMM([String? locale]) : this('MMMM', locale);
 
   /// Creates an Ethiopian date format object with the pattern 'MMMMd' and optional locale.
-  ETDateFormat.MMMMd([locale]) : this('MMMMd', locale);
+  ETDateFormat.MMMMd([String? locale]) : this('MMMMd', locale);
 
   /// Creates an Ethiopian date format object with the pattern 'MMMMEEEEd' and optional locale.
-  ETDateFormat.MMMMEEEEd([locale]) : this('MMMMEEEEd', locale);
+  ETDateFormat.MMMMEEEEd([String? locale]) : this('MMMMEEEEd', locale);
 
   /// Creates an Ethiopian date format object with the pattern 'QQQ' and optional locale.
-  ETDateFormat.QQQ([locale]) : this('QQQ', locale);
+  ETDateFormat.QQQ([String? locale]) : this('QQQ', locale);
 
   /// Creates an Ethiopian date format object with the pattern 'QQQQ' and optional locale.
-  ETDateFormat.QQQQ([locale]) : this('QQQQ', locale);
+  ETDateFormat.QQQQ([String? locale]) : this('QQQQ', locale);
 
   /// Creates an Ethiopian date format object with the pattern 'y' and optional locale.
-  ETDateFormat.y([locale]) : this('y', locale);
+  ETDateFormat.y([String? locale]) : this('y', locale);
 
   /// Creates an Ethiopian date format object with the pattern 'yM' and optional locale.
-  ETDateFormat.yM([locale]) : this('yM', locale);
+  ETDateFormat.yM([String? locale]) : this('yM', locale);
 
   /// Creates an Ethiopian date format object with the pattern 'yMd' and optional locale.
-  ETDateFormat.yMd([locale]) : this('yMd', locale);
+  ETDateFormat.yMd([String? locale]) : this('yMd', locale);
 
   /// Creates an Ethiopian date format object with the pattern 'yMEd' and optional locale.
-  ETDateFormat.yMEd([locale]) : this('yMEd', locale);
+  ETDateFormat.yMEd([String? locale]) : this('yMEd', locale);
 
   /// Creates an Ethiopian date format object with the pattern 'yMMM' and optional locale.
-  ETDateFormat.yMMM([locale]) : this('yMMM', locale);
+  ETDateFormat.yMMM([String? locale]) : this('yMMM', locale);
 
   /// Creates an Ethiopian date format object with the pattern 'yMMMd' and optional locale.
-  ETDateFormat.yMMMd([locale]) : this('yMMMd', locale);
+  ETDateFormat.yMMMd([String? locale]) : this('yMMMd', locale);
 
   /// Creates an Ethiopian date format object with the pattern 'yMMMEd' and optional locale.
-  ETDateFormat.yMMMEd([locale]) : this('yMMMEd', locale);
+  ETDateFormat.yMMMEd([String? locale]) : this('yMMMEd', locale);
 
   /// Creates an Ethiopian date format object with the pattern 'yMMMM' and optional locale.
-  ETDateFormat.yMMMM([locale]) : this('yMMMM', locale);
+  ETDateFormat.yMMMM([String? locale]) : this('yMMMM', locale);
 
   /// Creates an Ethiopian date format object with the pattern 'yMMMMd' and optional locale.
-  ETDateFormat.yMMMMd([locale]) : this('yMMMMd', locale);
+  ETDateFormat.yMMMMd([String? locale]) : this('yMMMMd', locale);
 
   /// Creates an Ethiopian date format object with the pattern 'yMMMMEEEEd' and optional locale.
-  ETDateFormat.yMMMMEEEEd([locale]) : this('yMMMMEEEEd', locale);
+  ETDateFormat.yMMMMEEEEd([String? locale]) : this('yMMMMEEEEd', locale);
 
   /// Creates an Ethiopian date format object with the pattern 'yQQQ' and optional locale.
-  ETDateFormat.yQQQ([locale]) : this('yQQQ', locale);
+  ETDateFormat.yQQQ([String? locale]) : this('yQQQ', locale);
 
   /// Creates an Ethiopian date format object with the pattern 'yQQQQ' and optional locale.
-  ETDateFormat.yQQQQ([locale]) : this('yQQQQ', locale);
+  ETDateFormat.yQQQQ([String? locale]) : this('yQQQQ', locale);
 
   /// Creates an Ethiopian date format object with the pattern 'H' and optional locale.
-  ETDateFormat.H([locale]) : this('H', locale);
+  ETDateFormat.H([String? locale]) : this('H', locale);
 
   /// Creates an Ethiopian date format object with the pattern 'Hm' and optional locale.
-  ETDateFormat.Hm([locale]) : this('Hm', locale);
+  ETDateFormat.Hm([String? locale]) : this('Hm', locale);
 
   /// Creates an Ethiopian date format object with the pattern 'Hms' and optional locale.
-  ETDateFormat.Hms([locale]) : this('Hms', locale);
+  ETDateFormat.Hms([String? locale]) : this('Hms', locale);
 
   /// Creates an Ethiopian date format object with the pattern 'j' and optional locale.
-  ETDateFormat.j([locale]) : this('j', locale);
+  ETDateFormat.j([String? locale]) : this('j', locale);
 
   /// Creates an Ethiopian date format object with the pattern 'jm' and optional locale.
-  ETDateFormat.jm([locale]) : this('jm', locale);
+  ETDateFormat.jm([String? locale]) : this('jm', locale);
 
   /// Creates an Ethiopian date format object with the pattern 'jms' and optional locale.
-  ETDateFormat.jms([locale]) : this('jms', locale);
+  ETDateFormat.jms([String? locale]) : this('jms', locale);
 
   /// Converts the provided [date] parameter, assumed to be aDateTime object,
   ///
