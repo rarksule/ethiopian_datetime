@@ -85,7 +85,7 @@ final class ETDateUtils {
   /// ```
   /// if locale is not given defaults to 'am'
   /// Returns a list of month names in the specified locale.
-  static List<String> getMonthNames([locale]) {
+  static List<String> getMonthNames([String? locale]) {
     if (ethiopianDateSymbols[locale ?? "am"] == null) {
       return ethiopianDateSymbols["am"]!["MONTHS"]!;
     }
@@ -100,7 +100,7 @@ final class ETDateUtils {
   /// ```
   /// if locale is not given defaults to 'am'
   /// Returns a list of shortMonth names in the specified locale.
-  static List<String> getShortMonthNames([locale]) {
+  static List<String> getShortMonthNames([String? locale]) {
     if (ethiopianDateSymbols[locale ?? "am"] == null) {
       return ethiopianDateSymbols["am"]!["SHORTMONTHS"]!;
     }
@@ -115,7 +115,7 @@ final class ETDateUtils {
   /// ```
   /// if locale is not given defaults to 'am'
   /// Returns a list of narrowMonth names in the specified locale.
-  static List<String> getNarrowMonthNames([locale]) {
+  static List<String> getNarrowMonthNames([String? locale]) {
     if (ethiopianDateSymbols[locale ?? "am"] == null) {
       return ethiopianDateSymbols["am"]!["NARROWMONTHS"]!;
     }
@@ -130,7 +130,7 @@ final class ETDateUtils {
   /// ```
   /// if locale is not given defaults to 'am'
   /// Returns a list of Weekday names in the specified locale.
-  static List<String> getWeekDayNames([locale]) {
+  static List<String> getWeekDayNames([String? locale]) {
     if (ethiopianDateSymbols[locale ?? "am"] == null) {
       return ethiopianDateSymbols["am"]!["WEEKDAYS"]!;
     }
@@ -145,7 +145,7 @@ final class ETDateUtils {
   /// ```
   /// if locale is not given defaults to 'am'
   /// Returns a list of shortWeekday names in the specified locale.
-  static List<String> getShortWeekDayNames([locale]) {
+  static List<String> getShortWeekDayNames([String? locale]) {
     if (ethiopianDateSymbols[locale ?? "am"] == null) {
       return ethiopianDateSymbols["am"]!["SHORTWEEKDAYS"]!;
     }
@@ -160,7 +160,7 @@ final class ETDateUtils {
   /// ```
   /// if locale is not given defaults to 'am'
   /// Returns a list of narrowWeekDay names in the specified locale.
-  static List<String> getNarrowWeekDayNames([locale]) {
+  static List<String> getNarrowWeekDayNames([String? locale]) {
     if (ethiopianDateSymbols[locale ?? "am"] == null) {
       return ethiopianDateSymbols["am"]!["NARROWWEEKDAYS"]!;
     }
@@ -175,7 +175,7 @@ final class ETDateUtils {
   /// ```
   /// if locale is not given defaults to 'am'
   /// Returns a list of timeofDays names in the specified locale.
-  static List<String> getTimeOfDayNames([locale]) {
+  static List<String> getTimeOfDayNames([String? locale]) {
     final value =
         ethiopianDateSymbols[locale ?? "am"] ?? ethiopianDateSymbols["am"]!;
 
